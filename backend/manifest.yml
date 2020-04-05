@@ -1,0 +1,10 @@
+applications:
+- name: blue-style-transfer
+  memory: 256M
+  disk_quota: 512M
+  path: .
+  buildpack: nodejs_buildpack
+  host: blue-style-transfer
+  domain: mybluemix.net
+  command: node app.js
+  timeout: 80
